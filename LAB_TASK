@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab task</title>
+</head>
+<body>
+    <script>
+
+        /// MD Tamim Hossain (039)
+
+        /// Calculator Fuction Start ///
+        let Calculator = function(a, b, sgn) {
+            if (sgn == 1) return a + b;
+            else if (sgn == 2) return a - b;
+            else if (sgn == 3) return a * b;
+            else if (sgn == 4) return a / b;
+            else return -1;
+        }
+        let a = parseInt (prompt("Enter a number: "));
+        let b = parseInt (prompt("Enter another number: "));
+        let choice = parseInt (prompt("1 --> Addition\n2 --> Subtraction\n3 --> Multiplication\n4 --> Division\n"));
+        document.write(Calculator(a, b, choice), "<br>");
+        /// Calculator Function End ///
+
+
+
+
+        /// Celcius to Fahrenheit Function Start ///
+        let Fahrenheit = function(clc) {
+            return (clc * (9 / 5)) + 32;
+        }
+        let celc = parseInt(prompt("Enter Temperature in Celcius: "));
+        document.write(Fahrenheit(celc), "<br>");
+        /// Celcius to Fahrenheit Function End ///
+
+
+
+        
+        /// Maximum elements in an array Start ///
+        let sz = parseInt (prompt("Enter array size: "));
+        let arr = [sz];
+        mx = 0;
+        for (let i=0; i<sz; i++) {
+            arr[i] = parseInt(prompt("Enter element: "));
+            if (arr[i] > mx) {
+                mx = arr[i];
+            }
+        }
+        document.write("Array = ", arr, "<br>");
+        document.write("Maximum elements on array is: ", mx, "<br>");
+        /// Maximum elements in an array End ///
+
+
+
+        
+        /// Function to print even elements of array Start ///
+        let even_array = function(arr = [], sz) {
+            let even = [];
+            for (let i=0; i<sz; i++) {
+                if (!(arr[i] & 1)) {
+                    even.push(arr[i]);
+                }
+            }
+            return even;
+        }
+        let siz = parseInt (prompt("Enter array size: "));
+        let ar = [siz];
+        for (let i=0; i<siz; i++) {
+             ar[i] = parseInt(prompt("Enter element: "));
+        }
+        document.write("Initial array= ", ar, "<br>");
+        document.write("All even numbers of this array = ", even_array(ar, siz));
+        /// Function to print even elements of array End ///
+        
+    </script>
+</body>
+</html>
