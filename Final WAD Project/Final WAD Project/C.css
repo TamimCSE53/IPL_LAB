@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(image/imgc.jpg);
+    margin: 10px;
+    color: #fff;
+}
+  
+h1, h2 {
+    color: #ff7200;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+p {
+    letter-spacing: 1.2px;
+    margin-left: 30px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #337ab7;
+}
+
+a:hover {
+    color: #fff;
+}
+
+.last {
+    margin-left: 30px;
+}
